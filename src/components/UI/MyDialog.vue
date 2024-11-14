@@ -29,16 +29,18 @@ export default {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(128, 128, 128, 0.543);
+	background: rgba(74, 74, 74, 0.543);
 	position: fixed;
-	display: flex;
 	transition: 1s;
 }
 
 .dialog_content {
+	display: flex;
+	align-items: start;
 	background: white;
-	border-radius: 12px;
 	padding: 20px;
-	margin: auto;
+	left: 0;
+	height: 100vh;
+	width: 350px;
 }
 </style>
