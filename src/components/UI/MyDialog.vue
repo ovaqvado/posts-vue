@@ -7,19 +7,11 @@
 </template>
 
 <script>
+import toggleMixin from '@/mixins/toggleMixin'
+
 export default {
 	name: 'my-dialog',
-	props: {
-		show: {
-			type: Boolean,
-			default: false,
-		},
-	},
-	methods: {
-		hideDialog() {
-			this.$emit('update:show', false)
-		},
-	},
+	mixins: [toggleMixin],
 }
 </script>
 
@@ -42,5 +34,22 @@ export default {
 	left: 0;
 	height: 100vh;
 	width: 350px;
+}
+
+.dialog {
+	animation-duration: 0.3s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: -100%;
+		width: 300%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
 }
 </style>

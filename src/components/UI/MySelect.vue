@@ -27,4 +27,14 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+select {
+	background: none;
+	outline: none;
+	widows: 70px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid teal;
+	color: teal;
+}
+</style>

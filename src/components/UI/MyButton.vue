@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import '../../../node_modules/vue-preloader/dist/style.css'
+
 export default {
 	name: 'my-button',
 }
